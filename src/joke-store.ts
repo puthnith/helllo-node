@@ -1,8 +1,11 @@
 import Knex from "knex"
 
+import { camelKeys } from "./camel-snake"
+
 export interface Joke {
   id: string
   text: string
+  createdAt: Date
 }
 
 export class JokeStore {
@@ -10,6 +13,7 @@ export class JokeStore {
 
   async random(): Promise<Joke> {
     const jokes = await this.db<Joke>("joke")
-    return jokes[Math.floor(Math.random() * (jokes.length - 1))]
+    const joke = jokes[Math.floor(Math.random() * (jokes.length - 1))]
+    return camelKeys(joke)
   }
 }
