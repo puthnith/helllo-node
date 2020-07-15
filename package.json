@@ -2,20 +2,20 @@
   "name": "hello-node",
   "version": "1.0.0",
   "description": "A hello world project",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/puthnith/hello-node.git"
-  },
+  "author": "Puthnith Var",
   "keywords": [
     "hello",
     "node"
   ],
-  "author": "Puthnith Var",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/puthnith/hello-node.git"
+  },
   "bugs": {
     "url": "https://github.com/puthnith/hello-node/issues"
   },
   "homepage": "https://github.com/puthnith/hello-node#readme",
+  "license": "MIT",
   "scripts": {
     "migrate": "./node_modules/knex/bin/cli.js migrate:latest",
     "migrate:make": "./node_modules/.bin/knex migrate:make",
@@ -65,11 +65,6 @@
     "ext": "ts"
   },
   "eslintConfig": {
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-      "ecmaVersion": 2019,
-      "sourceType": "module"
-    },
     "extends": [
       "plugin:@typescript-eslint/recommended",
       "prettier/@typescript-eslint",
@@ -81,6 +76,11 @@
     "plugins": [
       "simple-import-sort"
     ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": 2019,
+      "sourceType": "module"
+    },
     "rules": {
       "no-console": "error",
       "simple-import-sort/sort": "error",
