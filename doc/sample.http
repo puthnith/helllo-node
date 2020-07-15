@@ -11,5 +11,7 @@ GET http://localhost:3000/
 # Connection: close
 #
 # {
-#   "message": "Hello"
+#   "id": "4a8bf592-e1ba-464c-905e-05a7add1a7c0",
+#   "text": "Did you know the first French fries weren't actually cooked in France? They were cooked in Greece.",
+#   "created_at": "2020-07-15 17:57:10"
 # }
