@@ -5,14 +5,12 @@
       "type": "node",
       "request": "launch",
       "name": "Debug",
-      "skipFiles": [
-        "<node_internals>/**"
-      ],
-      "program": "${workspaceFolder}/src/server.ts",
+      // "runtimeArgs": ["inspect"],
       "preLaunchTask": "tsc: build - tsconfig.json",
-      "outFiles": [
-        "${workspaceFolder}/build/**/*.js"
-      ]
+      "program": "${workspaceFolder}/src/server.ts",
+      "console": "integratedTerminal",
+      "outFiles": ["${workspaceFolder}/build/**/*.js"],
+      "skipFiles": ["<node_internals>/**"]
     }
   ]
 }

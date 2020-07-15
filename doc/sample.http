@@ -1,0 +1,15 @@
+GET http://localhost:3000/
+
+# @ Response
+# HTTP/1.1 200 OK
+# X-Powered-By: Express
+# Access-Control-Allow-Origin: *
+# Content-Type: application/json; charset=utf-8
+# Content-Length: 19
+# ETag: W/"13-Pa/MFmOyCaOzvReId5aJY+w0TX8"
+# Date: Wed, 15 Jul 2020 17:11:11 GMT
+# Connection: close
+#
+# {
+#   "message": "Hello"
+# }
