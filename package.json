@@ -55,7 +55,7 @@
     "watch": [
       "src"
     ],
-    "exec": "npm start",
+    "exec": "node --inspect=5858 -r ts-node/register ./src/server.ts",
     "ext": "ts"
   },
   "eslintConfig": {
