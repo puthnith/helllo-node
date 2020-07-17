@@ -21,6 +21,7 @@
     "seed:make": "./node_modules/.bin/knex seed:make",
     "lint": "eslint '*/**/*.ts' --quiet --fix",
     "debug": "nodemon",
+    "test": "jest",
     "build": "tsc",
     "start": "node ./build/server.js"
   },
