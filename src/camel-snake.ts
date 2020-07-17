@@ -18,4 +18,4 @@ const camelKeys = switchKeys(camel)
 
 const snakeKeys = switchKeys(snake)
 
-export { camelKeys, snakeKeys }
+export { camel, snake, camelKeys, snakeKeys }
